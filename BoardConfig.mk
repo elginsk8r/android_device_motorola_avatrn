@@ -23,6 +23,7 @@ include device/motorola/sm7435-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := avatrn
 
 # HIDL
+DEVICE_MANIFEST_PARROT_FILES += $(DEVICE_PATH)/manifest.xml
 ODM_MANIFEST_SKUS += dn
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifest_dn.xml
 ODM_MANIFEST_SKUS += n
