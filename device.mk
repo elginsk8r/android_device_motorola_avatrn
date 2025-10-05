@@ -34,9 +34,9 @@ $(call inherit-product, device/motorola/sm8475-common/sm8475.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResEqs \
-    LineageSystemUIEqs \
-    SystemUIResEqs
+    FrameworksResAvatrn \
+    LineageSystemUIAvatrn \
+    SystemUIResAvatrn
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -87,4 +87,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/eqs/eqs-vendor.mk)
+$(call inherit-product, vendor/motorola/avatrn/avatrn-vendor.mk)
