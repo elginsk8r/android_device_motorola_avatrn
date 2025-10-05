@@ -16,8 +16,8 @@
 
 DEVICE_PATH := device/motorola/avatrn
 
-# Inherit from motorola sm8475-common
-include device/motorola/sm8475-common/BoardConfigCommon.mk
+# Inherit from motorola sm7435-common
+include device/motorola/sm7435-common/BoardConfigCommon.mk
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := avatrn
@@ -29,11 +29,11 @@ ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_dne.xml
 ODM_MANIFEST_SKUS += dn
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifest_dn.xml
 ODM_MANIFEST_SKUS += n
-ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/manifest_n.xml $(COMMON_PATH)/manifest_cape_ss.xml
+ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/manifest_n.xml $(COMMON_PATH)/manifest_parrot_ss.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG += \
-	vendor/ext_config/moto-waipio-avatrn.config
+	vendor/ext_config/moto-parrot-avatrn.config
 
 # Partitions
 BOARD_MOT_DP_GROUP_SIZE := 9038725120 # ( BOARD_SUPER_PARTITION_SIZE - 4MB )
