@@ -41,8 +41,8 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sku_parrot/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/sku_parrot/mixer_paths_parrot_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/mixer_paths_parrot_mtp.xml \
-    $(LOCAL_PATH)/audio/sku_parrot/resourcemanager_parrot_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/resourcemanager_parrot_mtp.xml \
+    $(LOCAL_PATH)/audio/sku_parrot/mixer_paths_parrot_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/mixer_paths_parrot_qrd.xml \
+    $(LOCAL_PATH)/audio/sku_parrot/resourcemanager_parrot_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/resourcemanager_parrot_qrd.xml \
     $(LOCAL_PATH)/audio/sku_parrot_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot_qssi/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
