@@ -19,21 +19,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from eqs device
-$(call inherit-product, device/motorola/eqs/device.mk)
+# Inherit from avatrn device
+$(call inherit-product, device/motorola/avatrn/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_eqs
-PRODUCT_DEVICE := eqs
+PRODUCT_NAME := lineage_avatrn
+PRODUCT_DEVICE := avatrn
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := motorola edge 30 ultra
+PRODUCT_MODEL := motorola edge 2024
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceProduct="eqs_ge" \
-    BuildDesc="eqs_ge-user 14 U1SQS34.52-21-1-15 b8994a-9634a release-keys" \
-    BuildFingerprint="motorola/eqs_ge/eqs:14/U1SQS34.52-21-1-15/b8994a-9634a:user/release-keys"
+    DeviceProduct="avatrn_g" \
+    BuildDesc="avatrn_g-user 14 U2UANS34.72-43-1-8 ab5eee-04ba4 release-keys" \
+    BuildFingerprint="motorola/avatrn_g/avatrn:14/U2UANS34.72-43-1-8/ab5eee-04ba4:user/release-keys"
