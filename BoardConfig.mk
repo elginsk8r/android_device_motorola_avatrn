@@ -23,12 +23,10 @@ include device/motorola/sm7435-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := avatrn
 
 # HIDL
-ODM_MANIFEST_SKUS += dne
-ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_dne.xml
 ODM_MANIFEST_SKUS += dn
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifest_dn.xml
 ODM_MANIFEST_SKUS += n
-ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/manifest_n.xml $(COMMON_PATH)/manifest_cape_ss.xml
+ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/manifest_n.xml $(COMMON_PATH)/manifest_parrot_ss.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG += \
@@ -47,12 +45,12 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 
 # Security
-BOOT_SECURITY_PATCH := 2025-02-01
+BOOT_SECURITY_PATCH := 2025-07-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Verified Boot
-BOARD_AVB_ROLLBACK_INDEX := 22
-BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 22
+BOARD_AVB_ROLLBACK_INDEX := 13
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 13
 
 # inherit from the proprietary version
 include vendor/motorola/avatrn/BoardConfigVendor.mk
