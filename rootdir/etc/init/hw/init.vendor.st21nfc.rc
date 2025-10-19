@@ -9,16 +9,6 @@ on early-boot
 	chown secure_element secure_element /dev/st54spi
 	chmod 0660 /dev/st54spi
 
-on property:ro.vendor.hw.nfc=ese_st
-	start gto_secure_element_hal_service_1_2
-
-service gto_secure_element_hal_service_1_2 /vendor/bin/hw/android.hardware.secure_element@1.2-service-gto
-	override
-	class hal
-	user secure_element
-	group secure_element nfc
-	disabled
-
 on property:ro.vendor.hw.nfc=true
 	start vendor.st_nfc_hal_service
 
